@@ -3,63 +3,95 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- <meta http-equiv="refresh" content="4"> -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitmanPlus</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="css/paticularAppointment.css">
-    
-    <title>Paticular Appointments Page</title>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/trainer.css">
+
 </head>
 
 <body>
 
+    <!-- header section starts      -->
+
     <header class="header">
 
-        <a href="./index.html" class="logo"> <span>RAPID</span>FIT </a>
+        <!-- Replace the existing code -->
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </a>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="./index.html">home</a>
+            <!-- <a href="#about">about</a> -->
+            <a href="#services">services</a>
+            <a href="#calorie">calorie Calculator</a>
+            <a href="./trainer.html">experts</a>
+            <a href="#blog">blogs</a>
+        </nav>
 
     </header>
-    <section class="all_appointment">
-        <div id="display_appointment">
-            <!-- All the appointment from backend -->
+
+
+    <section class="about" id="about">
+        <div class="content banner">
+            <h3 class="title">Expert</h3>
         </div>
+        </div>
+        
+
     </section>
-    
+    <section class="services" id="services">
+        <div class="content">
+
+           <div class="tidycal-embed" data-path="abeel185"></div>
+<script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
+            </div>
+
+
+
+    </section>
 
     <section class="footer">
 
         <div class="box-container">
-
+            <div class="box">
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt="Logo">
+                </a>
+            </div>
             <div class="box">
                 <h3>quick links</h3>
-                <a class="links" href="#home">home</a>
-                <a class="links" href="#about">about</a>
-                <a class="links" href="#features">features</a>
-                <a class="links" href="#pricing">pricing</a>
-                <a class="links" href="#trainers">trainers</a>
-                <a class="links" href="#appointment">appointment</a>
+                <a class="links" href="/index.html">home</a>
+                <!-- <a class="links" href="#about">about</a> -->
+                <a class="links" href="#services">services</a>
+                <a class="links" href="#calorie">calorie Calculator</a>
+                <a class="links" href="./trainer.html">experts</a>
+                <a class="links" href="#blog">blogs</a>
+            </div>
+
+            <div class="box">
+                <h3>Services</h3>
+                <a class="links" href="#home">Physical health</a>
+                <a class="links" href="#about">Mental health</a>
+                <a class="links" href="#features">Nutritional health</a>
             </div>
 
             <div class="box">
                 <h3>opening hours</h3>
-                <p> monday : <i> 7:00am - 10:30pm </i> </p>
-                <p> tuesday : <i> 7:00am - 10:30pm </i> </p>
-                <p> wednesday : <i> 7:00am - 10:30pm </i> </p>
-                <p> friday : <i> 7:00am - 10:30pm </i> </p>
-                <p> saturday : <i> 7:00am - 10:30pm </i> </p>
-                <p> sunday : <i> closed </i> </p>
-            </div>
-
-            <div class="box">
-                <h3>opening hours</h3>
-                <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
-                <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
-                <p> <i class="fas fa-envelope"></i> Masaischool@gmail.com </p>
-                <p> <i class="fas fa-map"></i> Noida, india - 400104 </p>
+                <a class="links" href="#home">about us</a>
+                <a class="links" href="#about">contact us</a>
                 <div class="share">
                     <a href="#" class="fab fa-facebook-f"></a>
                     <a href="#" class="fab fa-twitter"></a>
@@ -68,19 +100,20 @@
                 </div>
             </div>
 
-            <div class="box">
-                <h3>newsletter</h3>
-                <p>subscribe for latest updates</p>
-                <form action="">
-                    <input type="email" name="" class="email" placeholder="enter your email" id="">
-                    <input type="submit" value="subscribe" class="btn">
-                </form>
-            </div>
+            
 
         </div>
 
     </section>
 
+    <!-- footer section ends -->
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://www.twilik.com/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
+
+    <!-- custom js file link  -->
+
 </body>
+
 </html>
-<script src="./script/paticularAppointment.js"></script>
