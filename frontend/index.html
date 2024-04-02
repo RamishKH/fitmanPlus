@@ -23,7 +23,7 @@
 
     <!-- header section starts      -->
 
-    <header class="header">
+    <header id="navbar" class="header">
 
         <!-- Replace the existing code -->
         <a href="#" class="logo">
@@ -34,6 +34,7 @@
 
         <nav class="navbar">
             <a href="./index.html">home</a>
+            <a href="./index.html#aboutus">about us</a>
             <a href="./index.html#services">services</a>
             <a href="./index.html#calorie">calorie Calculator</a>
             <a href="./trainer.html">experts</a>
@@ -70,7 +71,20 @@
         </div>
 
     </section>
+    <section class="services" id="aboutus">
+        <div class="content">
+            <h3 class="title">About US</h3>
+                <div class="box aboutus">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec turpis ultricies, tincidunt
+                        ante et, euismod massa. Phasellus at arcu aliquet, scelerisque magna eu, fermentum lectus. Duis
+                        ultrices placerat egestas. Orci varius natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mus. Praesent sed bibendum lacus, nec pharetra sapien. Aliquam vel faucibus
+                        massa. Vivamus mollis fermentum elit ut portal.</p>
+                </div>
 
+            </div>
+
+    </section>
     <!-- home section ends -->
     <!-- about section starts  -->
     <section class="about" id="about">
@@ -143,10 +157,11 @@
 
             <h3 class="title">Book Our Services</h3>
             <div class="box-container">
-                <div class="box">
+                <div class="box display">
                     <img src="images/fitness.png" alt="">
                 </div>
-                <div class="box">
+                <div class="box displaymini">
+                    <img src="images/fitness.png" alt="">
                     <span>1</span>
                     <h3>PHYSICAL HEALTH</h3>
                     <p>We all know that being active and participating in a regular workout program is good for our
@@ -161,7 +176,8 @@
 
 
             <div class="box-container">
-                <div class="box">
+                <div class="box displaymini">
+                    <img src="images/mentalHealth.png" alt="">
                     <span>2</span>
                     <h3>MENTAL HEALTH</h3>
                     <p>We all know that being active and participating in a regular workout program is good for our
@@ -171,16 +187,17 @@
                     <a href="./about.html" class="btn">read more</a>
 
                 </div>
-                <div class="box">
+                <div class="box display">
                     <img src="images/mentalHealth.png" alt="">
 
                 </div>
             </div>
             <div class="box-container">
-                <div class="box">
+                <div class="box display">
                     <img src="images/Nutritional health.png" alt="">
                 </div>
-                <div class="box">
+                <div class="box displaymini">
+                    <img src="images/Nutritional health.png" alt="">
                     <span>3</span>
                     <h3>NUTRITIONAL HEALTH</h3>
                     <p>We all know that being active and participating in a regular workout program is good for our
@@ -302,7 +319,7 @@
 
             <div class="box">
                 <h3>More Info</h3>
-                <a class="links" href="#home">about us</a>
+                <a class="links" href="./index.html#aboutus">about us</a>
                 <a class="links" href="#about">contact us</a>
                 <div class="share">
                     <a href="#" class="fab fa-facebook-f"></a>
@@ -325,6 +342,18 @@
     <script src="https://www.twilik.com/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
 
     <!-- custom js file link  -->
+    <!-- <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-50px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script> -->
     <script src="script/index.js"></script>
 
 </body>
