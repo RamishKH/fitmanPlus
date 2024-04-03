@@ -1199,7 +1199,7 @@ display: none;
     
     }
     .services .displaymini img{
-      width: 75% !important ;
+      width: 60% !important ;
       display: block;
       
       }
@@ -1242,6 +1242,10 @@ display: none;
     width: 100%;
   }
 
+.services{
+  padding-left: 15%;
+  padding-right: 15%;
+}
 
 
   #menu-btn.fa-times {
@@ -1294,6 +1298,10 @@ display: none;
 }
 
 @media (max-width: 450px) {
+
+  .services .content .box-container:last-of-type .box input{
+    width: 60%;
+  }
   html {
     font-size: 50%;
   }
