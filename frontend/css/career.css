@@ -114,7 +114,7 @@ section {
   cursor: pointer;
   font-size: 1rem;
   font-weight: normal;
-  margin-left: 70%;
+  float: right;
   text-align: center;
 }
 
@@ -684,13 +684,6 @@ button[type="submit"]:hover {
 
 
 @media (max-width: 991px) {
-  .services .content img {
-    display: none;
-  }
-
-  .services .content .box-container .box:first-child {
-    display: none;
-  }
 
   .services .content .box-container .box:last-child img {
     display: block;
@@ -702,9 +695,6 @@ button[type="submit"]:hover {
     display: block;
   }
 
-  .services .content .box-container .box:first-child .expert {
-    display: none;
-  }
 
   html {
     font-size: 55%;
@@ -745,13 +735,6 @@ button[type="submit"]:hover {
     font-size: 1rem;
   }
 
-  .services .content img {
-    display: none;
-  }
-
-  .services .content .box-container .box:first-child {
-    display: none;
-  }
 
   .services .content .box-container .box:last-child img {
     display: block;
@@ -759,7 +742,6 @@ button[type="submit"]:hover {
   }
 
   .services .content .box-container .box p {
-    height: 200px;
     width: 100%;
     overflow: auto;
 
@@ -830,10 +812,6 @@ button[type="submit"]:hover {
 @media (max-width: 450px) {
   .services .content img {
     display: block;
-  }
-
-  .services .content .box-container .box:first-child .expert {
-    display: none;
   }
 
 

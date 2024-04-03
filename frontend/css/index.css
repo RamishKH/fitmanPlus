@@ -154,6 +154,7 @@ section {
 }
 
 .home .slide {
+  background-color: #0066EE;
   min-height: 70vh;
   background-size: cover !important;
   background-position: center !important;
@@ -250,6 +251,20 @@ section {
 
 /* services start */
 
+#aboutus{
+  padding-left: 15%;
+  padding-right: 15%;
+  color: #6C6C70;
+}
+#aboutus .content h3{
+  font-size: 1.5rem;
+}
+
+#aboutus .content p{
+  color: #6C6C70;
+  font-size: 1.2rem;
+}
+
 .services {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -301,9 +316,7 @@ section {
   line-height: 2;
 }
 
-.services .content .aboutus p {
-  color: #000000;
-}
+
 
 .services .content .box-container {
   display: -webkit-box;
@@ -341,9 +354,9 @@ section {
   -ms-flex: 1 1 20rem;
   flex: 1 1 20rem;
   align-content: center;
-  font-size: 1rem;
-  color: #8E8E93;
-  font-weight: normal;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: lighter;
 
 }
 
@@ -1121,7 +1134,7 @@ button[type="submit"]:hover {
 }
 
 .footer .box-container .box .links:hover {
-  color: #9CD02F;
+  color: #0066EE;
 }
 
 .footer .box-container .box p {
@@ -1152,7 +1165,7 @@ button[type="submit"]:hover {
 }
 
 .footer .box-container .box .share a:hover {
-  background: #9CD02F;
+  background: #0066EE;
 }
 
 .footer .box-container .box form .email {
@@ -1234,7 +1247,21 @@ display: none;
 }
 
 @media (max-width: 768px) {
-
+  .home .slide{
+    background-image: url(../images/banner-bg.jpg);
+    background-color: #1f242b;
+    background-blend-mode:soft-light;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Add your cool design styles here */
+  }
+  .bannerImage {
+    width: 0%;
+  }
+  .bannerImageDiv{
+    width: 0%;
+  }
   #menu-btn {
     display: inline-block;
   }
@@ -1299,11 +1326,14 @@ display: none;
 
 @media (max-width: 450px) {
 
-  .services .content .box-container:last-of-type .box input{
-    width: 60%;
-  }
-  html {
-    font-size: 50%;
+  .home .slide{
+    background-image: url(../images/banner-bg.jpg);
+    background-color: #1f242b;
+    background-blend-mode:soft-light;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Add your cool design styles here */
   }
   .bannerImage {
     width: 0%;
@@ -1311,6 +1341,13 @@ display: none;
   .bannerImageDiv{
     width: 0%;
   }
+  .services .content .box-container:last-of-type .box input{
+    width: 60%;
+  }
+  html {
+    font-size: 50%;
+  }
+ 
 /* 
   .services .content .box-container:last-of-type .box span {
     font-size: 0%;
