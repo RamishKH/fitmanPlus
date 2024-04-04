@@ -15,6 +15,52 @@
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
 }
+
+
+/* 
+
+*/
+
+.box .input-container{
+  display: flex;
+  justify-content: center;
+}
+
+/* CSS */
+.button-36 {
+  background-image: linear-gradient(222deg, #5b7fb0 9.16%, #3d87e8 43.89%, #5392e6 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-36:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+
+@media (min-width: 768px) {
+  .button-36 {
+    padding: 0 2.6rem;
+  }
+}
+/* 
+
+*/
 .footer .logo{
   display: block;
   width: 150px; 
@@ -1357,6 +1403,12 @@ display: none;
   }
 }
 
+@media (max-width: 800px) {
+  .box .input-container{
+    justify-content: left;
+  }
+}
+
 @media (max-width: 768px) {
   
 .home {
@@ -1459,9 +1511,11 @@ display: none;
     background-color: #1f242b;
     background-blend-mode:soft-light;
     background-repeat: no-repeat;
-    background-size: cover;
     background-position:left !important;
+    min-height: auto ;
     /* Add your cool design styles here */
+    padding-top: 20rem;
+    padding-bottom: 10rem;
   }
   .bannerImage {
     width: 0%;
