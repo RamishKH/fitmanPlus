@@ -156,7 +156,7 @@ section {
 .home .slide {
   background-color: #0066EE;
   min-height: 70vh;
-  background-size: cover !important;
+  background-size: cover ;
   background-position: center !important;
   padding: 2rem 9%;
   display: -webkit-box;
@@ -266,11 +266,11 @@ section {
 }
 .aboutus .content .title {
   font-size: 3.5rem;
-  color: #6C6C70;
+  color: #000000;
   margin-top: .5rem;
   padding-bottom: 2rem;
   text-align: center;
-  font-weight: normal;
+  font-weight: bold;
 
 }
 .aboutus .content .title2 {
@@ -303,7 +303,7 @@ section {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 2rem;
+  /* gap: 2rem; */
   margin-top: 1rem;
 }
 
@@ -314,12 +314,38 @@ section {
   -ms-flex: 1 1 20rem;
   flex: 1 1 20rem;
   align-content: center;
-  padding: 50px;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
 
 
 }
 
+.aboutus .content .box-container .image2 {
+  background-image: url(../images/member\ Arben.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  height: 40rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px; /* Adjust padding as needed */
+}
 
+.aboutus .content .box-container .image {
+  background-image: url(../images/member\ Andreas.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  height: 40rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px; /* Adjust padding as needed */
+}
 .aboutus .content .box-container img {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 20rem;
@@ -340,6 +366,10 @@ section {
   color: #0066EE;
 }
 
+.aboutus .content .box-container .box p {
+
+  color: #ffffff;
+}
 
 /* services start */
 
@@ -1284,6 +1314,7 @@ display: none;
 }
 
 @media (max-width: 991px) {
+
   .aboutus .content .box-container img{
     width: 130%;
   }
@@ -1292,7 +1323,7 @@ display: none;
     
     }
     .services .displaymini img{
-      width: 60% !important ;
+      width: 70% !important ;
       display: block;
       
       }
@@ -1327,6 +1358,10 @@ display: none;
 }
 
 @media (max-width: 768px) {
+  
+.home {
+  margin-top: 15rem;
+}
   .home .slide{
     background-image: url(../images/banner-bg.jpg);
     background-color: #1f242b;
@@ -1403,7 +1438,15 @@ display: none;
     flex-flow: column;
   }
 }
+@media (max-width: 650px){
+  .aboutus .content .box-container {
+    gap: 3rem;
+  }
+
+}
+
 @media (max-width: 600px){
+
   .aboutus .content .box-container img{
     width: 100%;
   }
@@ -1415,9 +1458,9 @@ display: none;
     background-image: url(../images/banner-bg.jpg);
     background-color: #1f242b;
     background-blend-mode:soft-light;
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position:left !important;
     /* Add your cool design styles here */
   }
   .bannerImage {
