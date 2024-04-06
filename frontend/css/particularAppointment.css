@@ -223,7 +223,9 @@ section {
 }
 
 
-
+.tidycal-embed{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 .about {
   display: -webkit-box;
@@ -257,11 +259,9 @@ section {
   flex: 1 1 42rem;
 }
 
-.about .content h4 {
+.about .content span {
   font-size: 2rem;
-  color: #ffffff;
-  text-align: center;
-  font-weight:normal;
+  color: #9CD02F;
 }
 
 .about .content .title {
@@ -269,6 +269,11 @@ section {
   color: #fff;
   margin-top: .5rem;
   text-align: center;
+}
+.about .content h4{
+  font-size: 1.5rem !important;
+  font-weight: normal !important;
+
 }
 
 .about .content p {
@@ -336,6 +341,10 @@ section {
   padding-left: 25%;
   padding-right: 25%;
 }
+.steps{
+  padding-left: 5%;
+  padding-right: 5%;
+}
 
 .services .content {
   -webkit-box-flex: 1;
@@ -377,7 +386,7 @@ section {
 
 .services .content p {
   font-size: 1.5rem;
-  color: #aaa;
+  color: #000000;
   padding: 1rem 0;
   line-height: 2;
 }
@@ -393,10 +402,7 @@ section {
 }
 
 
-.services .content .box-container .box:first-child span {
-  font-size: 1.5rem;
-  font-weight: normal;
-}
+
 
 .services .content .presentation {
   position: absolute;
@@ -691,28 +697,7 @@ button[type="submit"]:hover {
 
 
 @media (max-width: 991px) {
-  .services .content img {
-    display: none;
-  }
-
-  .services .content .box-container .box:first-child {
-    display: none;
-  }
-
-  .services .content .box-container .box:last-child img {
-    display: block;
-    width: 75%;
-
-  }
-
-  .services .content img {
-    display: block;
-  }
-
-  .services .content .box-container .box:first-child .expert {
-    display: none;
-  }
-
+  
   html {
     font-size: 55%;
     scroll-padding: 7rem;
@@ -752,26 +737,7 @@ button[type="submit"]:hover {
     font-size: 1rem;
   }
 
-  .services .content img {
-    display: none;
-  }
-
-  .services .content .box-container .box:first-child {
-    display: none;
-  }
-
-  .services .content .box-container .box:last-child img {
-    display: block;
-
-  }
-
-  .services .content .box-container .box p {
-    height: 200px;
-    width: 100%;
-    overflow: auto;
-
-  }
-
+  
   #menu-btn {
     display: inline-block;
   }
@@ -835,13 +801,6 @@ button[type="submit"]:hover {
 }
 
 @media (max-width: 450px) {
-  .services .content img {
-    display: block;
-  }
-
-  .services .content .box-container .box:first-child .expert {
-    display: none;
-  }
 
 
   html {
