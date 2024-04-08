@@ -286,6 +286,8 @@ section {
   flex-wrap: wrap;
   gap: 2rem;
   margin-top: 1rem;
+  padding-right: 7rem;
+  padding-left: 7rem;
 }
 
 .about .content .box-container .box {
@@ -743,6 +745,7 @@ button[type="submit"]:hover {
   }
 }
 
+
 @media (max-width: 768px) {
   .btn {
     font-size: 1rem;
@@ -783,6 +786,7 @@ button[type="submit"]:hover {
   .banner {
     margin-top: 20vh;
     align-items: center;
+    gap:0rem !important;
   }
 
   #menu-btn.fa-times {
@@ -834,6 +838,11 @@ button[type="submit"]:hover {
   }
 }
 
+@media (max-width: 535px) {
+ .about .content .box-container{
+  flex-direction:column;
+ }
+}
 @media (max-width: 450px) {
   .services .content img {
     display: block;
