@@ -839,11 +839,26 @@ button[type="submit"]:hover {
 }
 
 @media (max-width: 535px) {
- .about .content .box-container{
-  flex-direction:column;
- }
+  .about .content .box-container{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .banner .btn{
+    padding: 1rem;
+  }
 }
+
+
 @media (max-width: 450px) {
+
+  .about .content .box-container{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .banner .btn{
+    padding: 1rem;
+  }
+
   .services .content img {
     display: block;
   }
