@@ -198,10 +198,18 @@ section {
   cursor: pointer;
   display: none;
 }
-
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .home {
   padding: 0;
   margin-top: 5rem;
+
 }
 
 .home .slide {
@@ -426,8 +434,9 @@ hr {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 8rem;
-  padding-left: 25%;
-  padding-right: 25%;
+  padding-left: 10%;
+  padding-right: 10%;
+
 }
 
 .services .content {
@@ -437,7 +446,7 @@ hr {
 }
 
 .services .content span {
-  font-size: 3rem;
+  font-size: 1.5rem;
   width: 100%;
   text-align: center;
   color: #000000;
@@ -492,6 +501,7 @@ hr {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 20rem;
   flex: 1 1 20rem;
+  text-align: center;
   align-content: center;
 }
 
@@ -1358,6 +1368,7 @@ button[type="submit"]:hover {
 
   .header {
     padding: 0 2rem;
+    
   }
 
   section {
