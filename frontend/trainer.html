@@ -49,10 +49,10 @@
         <div class="content banner">
             <h3 class="title">Experten</h3>
             <div class="box-container banner ">
-                <a href="./trainer.html" class="child btn active">ALL</a>
-                <a href="./trainer.html" class="child btn">Mental Health</a>
-                <a href="./trainer.html" class="child btn">Physical Health</a>
-                <a href="./trainer.html" class="child btn">Nutritional Health</a>
+                <a class="child btn active" onclick="fetchData(this)">ALL</a>
+                <a class="child btn" onclick="filterByCategory(this,'1')">Mental Health</a>
+                <a class="child btn" onclick="filterByCategory(this,'2')">Physical Health</a>
+                <a class="child btn" onclick="filterByCategory(this,'3')">Nutritional Health</a>    
             </div>
         </div>
         </div>
@@ -62,9 +62,11 @@
     <section class="services" id="services">
         <div class="content">
 
-
+            
             <div class="box-container">
-                <div class="box">
+                <!-- <img style="display: block !important;" src='images/loading.gif'> -->
+            
+                <!-- <div class="box">
                     <img src="images/trainer-3.jpg" alt="">
                     <div class="expert expert1">
                         <div class="presentation icon">
@@ -122,8 +124,8 @@
                         massa. Vivamus mollis fermentum elit ut portal.</p>
                     <a href="" class="btn-inverted">BOOK NOW </a>
                 </div>
+            </div> -->
             </div>
-
 
 
     </section>
@@ -178,6 +180,7 @@
 
     <!-- custom js file link  -->
     <script src="script/index.js"></script>
+    <script src="script/trainer.js"></script>
 
 
 </body>
