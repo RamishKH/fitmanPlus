@@ -76,3 +76,7 @@ var swiper = new Swiper(".blogs-slider", {
         },
     },
 });
+window.addEventListener("load", function() {
+    const cards = document.querySelectorAll(".card");
+    cards.forEach(card => card.classList.add("is-loaded"));
+  });
