@@ -19,6 +19,15 @@ router.get("/page/:page", async (req, res) => {
   
     res.send(results).status(200);
   });
+
+  router.get("/free", async (req, res) => {
+
+    let collection = await db.collection("experts");
+    let results = await collection.find({ name: "free-consult" })
+    .toArray();
+    
+    res.send(results).status(200);
+  });
   
 router.get("/:tag/page/:page", async (req, res) => {
 
