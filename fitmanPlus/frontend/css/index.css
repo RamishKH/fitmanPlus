@@ -1498,6 +1498,13 @@ button[type="submit"]:hover {
   .aboutus .content .box-container img {
     width: 100%;
   }
+
+  body .container .card {
+    margin: 0px !important;
+    margin-bottom: 30px !important;
+    min-width:100% !important;
+  }
+  
 }
 @media (max-width: 450px) {
   .home .slide {
